@@ -1,5 +1,7 @@
 import styles from "./page.module.css";
 
+const basePath = process.env.NODE_ENV === "production" ? "/froth-fork-site" : "";
+
 const services = [
   {
     title: "Restaurant Setup & Launch",
@@ -129,7 +131,7 @@ export default function Home() {
           <span className={styles.logoMark} aria-hidden="true">
             <img
               className={styles.logoImage}
-              src="/logo.png"
+              src={`${basePath}/logo.png`}
               alt=""
               width={38}
               height={38}
@@ -152,7 +154,7 @@ export default function Home() {
         <section className={styles.hero}>
           <div
             className={styles.heroBackground}
-            style={{ backgroundImage: "url(/hero-bg.jpg)" }}
+            style={{ backgroundImage: `url(${basePath}/hero-bg.jpg)` }}
             role="presentation"
             aria-hidden="true"
           />
