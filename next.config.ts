@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",
+  basePath: "/froth-fork-site",
+  assetPrefix: "/froth-fork-site/",
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
