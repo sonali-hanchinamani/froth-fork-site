@@ -213,6 +213,13 @@
   text-wrap: balance;
 }
 
+.heroTitle {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 0.01em;
+}
+
 .lede {
   font-size: 18px;
   line-height: 1.8;
@@ -577,8 +584,8 @@
   }
 
   .logoMark {
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
   }
 
   .nav {
@@ -606,21 +613,31 @@
     padding: 40px 0 60px;
     min-height: auto;
     gap: 24px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .heroContent {
+    text-align: center;
+    align-items: center;
   }
 
   .hero h1 {
     font-size: 28px;
     line-height: 1.2;
+    text-align: center;
   }
 
   .lede {
     font-size: 14px;
     line-height: 1.6;
+    text-align: center;
   }
 
   .eyebrow {
     font-size: 10px;
     letter-spacing: 0.15em;
+    text-align: center;
   }
 
   .heroActions {

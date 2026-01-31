@@ -159,8 +159,9 @@ export default function Home() {
             aria-hidden="true"
           />
           <div className={styles.heroContent}>
-            <p className={styles.eyebrow}>Premium Hospitality Operations</p>
-            <h1>Premium hospitality, from blueprint to buzz.</h1>
+            <h1 className={styles.heroTitle}>Froth & Fork</h1>
+            
+            <p className={styles.eyebrow}>Premium hospitality, from blueprint to buzz.</p>
             <p className={styles.lede}>
               We help you build the brand, train the team, and craft the service
               journey.
