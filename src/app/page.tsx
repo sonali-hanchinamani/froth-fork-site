@@ -127,17 +127,13 @@ export default function Home() {
       <header className={styles.header}>
         <div className={styles.logo}>
           <span className={styles.logoMark} aria-hidden="true">
-            <svg
-              className={styles.logoIcon}
-              viewBox="0 0 48 48"
-              aria-hidden="true"
-            >
-              <path d="M16 20a8 8 0 0 1 16 0" />
-              <path d="M10 30c2-8 9-14 14-14s12 6 14 14" />
-              <path d="M10 30h28" />
-              <path d="M8 34h32" />
-              <circle cx="24" cy="18" r="2" />
-            </svg>
+            <img
+              className={styles.logoImage}
+              src="/logo.png"
+              alt=""
+              width={38}
+              height={38}
+            />
           </span>
           <span className={styles.logoText}>Froth &amp; Fork</span>
         </div>
@@ -154,6 +150,12 @@ export default function Home() {
 
       <main id="main" className={styles.main}>
         <section className={styles.hero}>
+          <div
+            className={styles.heroBackground}
+            style={{ backgroundImage: "url(/hero-bg.jpg)" }}
+            role="presentation"
+            aria-hidden="true"
+          />
           <div className={styles.heroContent}>
             <p className={styles.eyebrow}>Premium Hospitality Operations</p>
             <h1>Premium hospitality, from blueprint to buzz.</h1>

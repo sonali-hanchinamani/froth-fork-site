@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/froth-fork-site",
-  assetPrefix: "/froth-fork-site/",
+  basePath: isProd ? "/froth-fork-site" : undefined,
+  assetPrefix: isProd ? "/froth-fork-site/" : undefined,
   images: {
     unoptimized: true,
   },
